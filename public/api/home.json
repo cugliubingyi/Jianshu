@@ -1,0 +1,76 @@
+{
+	"success": true,
+	"data": {
+		"topicList": [{
+			"id": 1,
+			"title": "社会热点",
+			"imgUrl": "http://upload.jianshu.io/collections/images/261938/man-hands-reading-boy-large.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/64/h/64"
+		}, {
+			"id": 2,
+			"title": "手手绘",
+			"imgUrl": "http://upload.jianshu.io/collections/images/21/20120316041115481.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/64/h/64"
+		}, {
+			"id": 3,
+			"title": "读书",
+			"imgUrl": "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1446469830,3183602095&fm=11&gp=0.jpg"
+		}, {
+			"id": 4,
+			"title": "简书电影",
+			"imgUrl": "https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=612600183,1732588349&fm=15&gp=0.jpg"
+		}, {
+			"id": 5,
+			"title": "旅行·在路上",
+			"imgUrl": "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=86688891,1124531149&fm=15&gp=0.jpg"
+		}, {
+			"id": 6,
+			"title": "故事",
+			"imgUrl": "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3034342488,1768014794&fm=15&gp=0.jpg"
+		}, {
+			"id": 7,
+			"title": "自然科普",
+			"imgUrl": "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2012624060,110781505&fm=11&gp=0.jpg"
+		}, {
+			"id": 8,
+			"title": "历史",
+			"imgUrl": "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1834984066,2971328733&fm=15&gp=0.jpg"
+		}, {
+			"id": 9,
+			"title": "社会热点",
+			"imgUrl": "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2910016909,2243310691&fm=15&gp=0.jpg"
+		}],
+		"articleList": [{
+			"id": 1,
+			"title": "胡歌12年后首谈车祸",
+			"desc": "文/麦大人 01 胡歌又刷屏了。 近日他上了《朗读者》，而这一期的主题是“生命”，他用磁性的嗓音，朗读了一段《哈姆雷特》中的经典独白，相当震撼：...",
+			"imgUrl": "https://upload-images.jianshu.io/upload_images/2259045-2986b9be86b01f63?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240"
+		}, {
+			"id": 2,
+			"title": "自律的人有多可怕",
+			"desc": "说到自律，我第一个想到的是杨幂。她在录真正男子汉的时候体重47.9kg，在密室大逃脱中体重47.48kg 。也让网友感慨，原来世上体重不过百，不...",
+			"imgUrl": "https://upload-images.jianshu.io/upload_images/8455099-ae4732371cd52ec2.jpeg?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
+		}, {
+			"id": 3,
+			"title": "这部电影请用鼻子看",
+			"desc": "本文首发于公众号：十点的电影 （SDDDY10） 最近看了好多电影，但都没有什么想写的，直到这部电影，有人说这部电影是在美化罪恶，有人说这部电影...",
+			"imgUrl": "https://upload-images.jianshu.io/upload_images/18485841-3da0a053c8e3ea7f?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
+		}, {
+			"id": 4,
+			"title": "诗｜香港暴徒",
+			"desc": "肆意地释放暴虐， 脚踩着人性， 即使满身包裹， 可世人， 终究会透过， 你们无耻的行径， 看到你们丑恶的灵魂。 高喊着光明正大口号， 却干着卑鄙...",
+			"imgUrl": "https://upload-images.jianshu.io/upload_images/16017712-60a499bdac3ab46a.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
+		}],
+		"recommendList": [{
+			"id": 1,
+			"imgUrl": "https://cdn2.jianshu.io/assets/web/banner-s-club-aa8bdf19f8cf729a759da42e4a96f366.png"
+		}, {
+			"id": 2,
+			"imgUrl": "https://cdn2.jianshu.io/assets/web/banner-s-7-1a0222c91694a1f38e610be4bf9669be.png"
+		}, {
+			"id": 3,
+			"imgUrl": "https://cdn2.jianshu.io/assets/web/banner-s-5-4ba25cf5041931a0ed2062828b4064cb.png"
+		}, {
+			"id": 4,
+			"imgUrl": "//cdn2.jianshu.io/assets/web/banner-s-6-c4d6335bfd688f2ca1115b42b04c28a7.png"
+		}]
+	}
+}
