@@ -22,7 +22,7 @@ class List extends PureComponent{
                         </Link>
                     ))
                 }
-                <LoadMore onClick={() => getMoreList(page)}>更多文字</LoadMore>
+                {list.toJS().length?<LoadMore onClick={() => getMoreList(page)}>更多文字</LoadMore>:null}
             </div>
         )
     }

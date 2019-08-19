@@ -3,8 +3,12 @@ import logoPic from '../../statics/logo.png';
 
 export const HeaderWrapper = styled.div`
     z-index:1;
-    position:relative;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
     height:56px;
+    background:#fff;
     border-bottom:1px solid #f0f0f0;
 `;
 
@@ -14,17 +18,23 @@ export const Logo = styled.div`
     left:0;
     display:block;
     width:100px;
-    height:56px;
-    background:url(${logoPic});
+    height:55px;
+    background-image:url(${logoPic});
+    background-color:#fff;
     background-size:contain;
+    z-index:2;
 `;
 
 export const Nav = styled.div`
     width:960px;
     height:100%;
-    margin:0 auto;
+    position:absolute;
+    left:50%;
+    top:0;
+    margin-left:-480px;
     padding-right:70px;
     box-sizing:border-box;
+    z-index:1;
 `;
 
 export const NavItem = styled.div`
@@ -32,15 +42,111 @@ export const NavItem = styled.div`
     padding:0 15px;
     font-size:17px;
     color:#333;
+    cursor:pointer;
     &.left{
         float:left;
+    }
+    &.gray:hover{
+        background:#f3f5f7;
+    }
+    &.msg{
+        position:relative;
     }
     &.right{
         float:right;
         color:#969696;
+        .diamond-img{
+            width:50px;
+            height:20px;
+            margin-top:-6px;
+        }
+    }
+    &.user{
+        display:flex;
+        height:100%;
+        align-items:center;
+        position:relative;
+        .user-img{
+            width:40px;
+            height:40px;
+            border-radius:20px;
+        }
+        .user-arrow{
+            width:0;
+            height:0;
+            border-top:8px solid #969696;
+            border-left:6px solid transparent;
+            border-right:6px solid transparent;
+            margin-left:6px;
+        }
     }
     &.active{
         color:#ea6f5a;
+    }
+`;
+
+export const NavUserInfo = styled.ul`
+    position:absolute;
+    top:56px;
+    left:0;
+    width: 158px;
+    border-radius: 0 0 4px 4px;
+    padding:4px 0;
+    box-shadow:0 0 8px rgba(0,0,0,.2);
+    background:#fff;
+`;
+
+export const NavUserInfoItem = styled.li`
+    width:100%;
+    height:50px;
+    display:flex;
+    align-items:center;
+    :hover{
+        background:#f3f5f7;
+    }
+    .iconfont{
+        color:#ec6149;
+        font-size:20px;
+        font-weight:bold;
+        margin-left:20px;
+    }
+    .msg-content{
+        color:#000;
+        margin-left:12px;
+        margin-top:-4px;
+    }
+`;
+
+export const NavMsgInfo = styled.ul`
+    position:absolute;
+    top:56px;
+    left:0;
+    width: 200px;
+    border-radius: 0 0 4px 4px;
+    padding:4px 0;
+    box-shadow:0 0 8px rgba(0,0,0,.2);
+    background:#fff;
+    z-index:2;
+`;
+
+export const NavMsgInfoItem = styled.li`
+    width:100%;
+    height:50px;
+    display:flex;
+    align-items:center;
+    :hover{
+        background:#f3f5f7;
+    }
+    .iconfont{
+        color:#ec6149;
+        font-size:20px;
+        font-weight:bold;
+        margin-left:20px;
+    }
+    .msg-content{
+        color:#000;
+        margin-left:20px;
+        margin-top:-2px;
     }
 `;
 
@@ -99,12 +205,38 @@ export const NavSearch = styled.input.attrs({
 
 export const SearchInfo = styled.div`
     position:absolute;
-    left:0;
+    left:20px;
     top:56px;
     width:240px;
     padding:0 20px;
     box-shadow:0 0 8px rgba(0,0,0,.2);
     background:#fff;
+    ::before{
+        content:'';
+        display: block;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #FFF;
+        position: absolute;
+        left:20px;
+        top:-9px;
+        z-index:3;
+    }
+    ::after{
+        content:'';
+        display: block;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #eee;
+        position: absolute;
+        left:20px
+        top:-10px;
+        z-index:2;
+    }
 `;
 
 export const SearchInfoTitle = styled.div`
@@ -150,7 +282,9 @@ export const Addition = styled.div`
     position:absolute;
     right:0;
     top:0;
-    height:56px;
+    height:55px;
+    z-index:2;
+    background-color:#fff;
 `;
 
 export const Button = styled.div`
@@ -162,6 +296,7 @@ export const Button = styled.div`
     padding:0 20px;
     border:1px solid #ec6149;
     font-size:14px;
+    cursor:pointer;
     &.reg{
         color:#ec6149;  
     }
@@ -169,4 +304,57 @@ export const Button = styled.div`
         color:#fff;
         background:#ec6149;
     }
+`;
+
+export const MaskWrapper = styled.div`
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:rgba(0,0,0,0.5);
+    z-index:999;
+`;
+
+export const MaskLayer = styled.div`
+    width:380px;
+    height:425px;
+    position:absolute;
+    top:30px;
+    left:50%;
+    margin-left:-190px;
+    background:#fff;
+    padding:40px 72px 0;
+    box-sizing:border-box;
+    z-index:1000;
+    .mask-title{
+        font-size:18px;
+        line-height:25px;
+        text-align:center;
+        .mask-span{
+            color:#e9634c;
+        }
+    }
+    .mask-img{
+        width:190px;
+        height:190px;
+        margin-left:23px;
+    }
+    .mask-desc{
+        font-size:14px;
+        text-align:center;
+    }
+`;
+
+export const MaskButton = styled.div`
+    background-color: #e9634c;
+    color: #fff;
+    margin: 25px auto 0;
+    width: 190px;
+    height: 40px;
+    border-radius: 20px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
 `;

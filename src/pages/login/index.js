@@ -3,6 +3,7 @@ import {Redirect} from "react-router-dom";
 import {connect} from 'react-redux';
 import {LoginWrapper,LoginBox,Input,Button} from './style';
 import {actionCreators} from './store';
+import {actionCreators as headerActionCreators} from '../../common/header/store';
 
 class Login extends PureComponent{
     render(){
@@ -21,6 +22,9 @@ class Login extends PureComponent{
             return <Redirect to='/' />
         }
     }
+    componentDidMount(){
+        this.props.changeCurrentToLogin();
+    }
 }
 
 const mapState = (state) => ({
@@ -29,7 +33,14 @@ const mapState = (state) => ({
 
 const mapDispatch = (dispatch) => ({
     login(accountElem,passwordElem){
+        dispatch(headerActionCreators.userMouseLeave());
         dispatch(actionCreators.login(accountElem.value,passwordElem.value));
+        localStorage.login = 'login';
+        localStorage.account = accountElem.value;
+        localStorage.password = passwordElem.value;
+    },
+    changeCurrentToLogin(){
+        dispatch(headerActionCreators.changeCurrent('login'));
     }
 });
 

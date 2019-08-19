@@ -1,6 +1,7 @@
 {
 	"success": true,
 	"data": {
+		"quickMark": "https://cdn2.jianshu.io/assets/web/download-index-side-qrcode-cb13fc9106a478795f8d10f9f632fccf.png",
 		"topicList": [{
 			"id": 1,
 			"title": "社会热点",
@@ -35,14 +36,14 @@
 			"imgUrl": "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1834984066,2971328733&fm=15&gp=0.jpg"
 		}, {
 			"id": 9,
-			"title": "社会热点",
+			"title": "时间管理",
 			"imgUrl": "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2910016909,2243310691&fm=15&gp=0.jpg"
 		}],
 		"articleList": [{
 			"id": 1,
-			"title": "胡歌12年后首谈车祸",
-			"desc": "文/麦大人 01 胡歌又刷屏了。 近日他上了《朗读者》，而这一期的主题是“生命”，他用磁性的嗓音，朗读了一段《哈姆雷特》中的经典独白，相当震撼：...",
-			"imgUrl": "https://upload-images.jianshu.io/upload_images/2259045-2986b9be86b01f63?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240"
+			"title": "与其焦虑，不如自律",
+			"desc": "最近生活有些焦虑， 总是在不停的抓瞎忙碌着， 没有具体的目标，也没有前进的动力， 于是只能强忍着让自己安静下来看书， 无意中翻到一段话： 人的...",
+			"imgUrl": "https://upload-images.jianshu.io/upload_images/15152770-dfc918a72bd27991?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
 		}, {
 			"id": 2,
 			"title": "自律的人有多可怕",
@@ -59,6 +60,16 @@
 			"desc": "肆意地释放暴虐， 脚踩着人性， 即使满身包裹， 可世人， 终究会透过， 你们无耻的行径， 看到你们丑恶的灵魂。 高喊着光明正大口号， 却干着卑鄙...",
 			"imgUrl": "https://upload-images.jianshu.io/upload_images/16017712-60a499bdac3ab46a.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
 		}],
+		"sliderList": [{
+			"id": 1,
+			"imgUrl": "//upload.jianshu.io/admin_banners/web_images/4706/7fc6a088c85ad29ab9754a8f5a7569c83a9db0a4.png?imageMogr2/auto-orient/strip|imageView2/1/w/1250/h/540"
+		},{
+			"id": 2,
+			"imgUrl": "//upload.jianshu.io/admin_banners/web_images/4686/b205842c3dd6736c233b052411fe1211f164fcaf.png?imageMogr2/auto-orient/strip|imageView2/1/w/1250/h/540"
+		},{
+			"id": 3,
+			"imgUrl": "//upload.jianshu.io/admin_banners/web_images/4680/f3832b8ec185f3772a31960a2494964132f29ce0.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/1250/h/540"
+		}],
 		"recommendList": [{
 			"id": 1,
 			"imgUrl": "https://cdn2.jianshu.io/assets/web/banner-s-club-aa8bdf19f8cf729a759da42e4a96f366.png"
@@ -70,7 +81,148 @@
 			"imgUrl": "https://cdn2.jianshu.io/assets/web/banner-s-5-4ba25cf5041931a0ed2062828b4064cb.png"
 		}, {
 			"id": 4,
-			"imgUrl": "//cdn2.jianshu.io/assets/web/banner-s-6-c4d6335bfd688f2ca1115b42b04c28a7.png"
+			"imgUrl": "https://cdn2.jianshu.io/assets/web/banner-s-6-c4d6335bfd688f2ca1115b42b04c28a7.png"
+		}],
+		"writerList": [{
+			"id": 1,
+			"imgUrl": "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1951701226,1003300430&fm=26&gp=0.jpg",
+			"userName": "西瓜语录",
+			"wordCount": "383",
+			"like": "33",
+			"attention": false
+		},{
+			"id": 2,
+			"imgUrl": "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3947305755,400453604&fm=26&gp=0.jpg",
+			"userName": "R狮子哥哥",
+			"wordCount": "2.2k",
+			"like": "143",
+			"attention": false
+		},{
+			"id": 3,
+			"imgUrl": "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3463784662,402798961&fm=26&gp=0.jpg",
+			"userName": "跳舞的麻雀",
+			"wordCount": "3.6k",
+			"like": "669",
+			"attention": false
+		},{
+			"id": 4,
+			"imgUrl": "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=4060212053,2596052139&fm=26&gp=0.jpg",
+			"userName": "天医延年",
+			"wordCount": "31.2k",
+			"like": "1.2k",
+			"attention": false
+		},{
+			"id": 5,
+			"imgUrl": "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=4033198690,2281187535&fm=26&gp=0.jpg",
+			"userName": "不倒翁why",
+			"wordCount": "3.2k",
+			"like": "12",
+			"attention": false
+		},{
+			"id": 6,
+			"imgUrl": "https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=399600612,252901190&fm=26&gp=0.jpg",
+			"userName": "思远说",
+			"wordCount": "12.1k",
+			"like": "435",
+			"attention": false
+		},{
+			"id": 7,
+			"imgUrl": "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2388497746,727496054&fm=26&gp=0.jpg",
+			"userName": "zi奕ctmp",
+			"wordCount": "134",
+			"like": "2",
+			"attention": false
+		},{
+			"id": 8,
+			"imgUrl": "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1859930772,3085103084&fm=26&gp=0.jpg",
+			"userName": "灵与慧",
+			"wordCount": "435",
+			"like": "21",
+			"attention": false
+		},{
+			"id": 9,
+			"imgUrl": "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1481194675,3303524907&fm=26&gp=0.jpg",
+			"userName": "涛涛妈1",
+			"wordCount": "3.6k",
+			"like": "125",
+			"attention": false
+		},{
+			"id": 10,
+			"imgUrl": "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1452082115,1034262222&fm=26&gp=0.jpg",
+			"userName": "青风徐来",
+			"wordCount": "432",
+			"like": "2",
+			"attention": false
+		},{
+			"id": 11,
+			"imgUrl": "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1140841078,3949355184&fm=26&gp=0.jpg",
+			"userName": "丁兆勇",
+			"wordCount": "355",
+			"like": "6",
+			"attention": false
+		},{
+			"id": 12,
+			"imgUrl": "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=466791696,2908781735&fm=26&gp=0.jpg",
+			"userName": "伍香权",
+			"wordCount": "21.3k",
+			"like": "987",
+			"attention": false
+		},{
+			"id": 13,
+			"imgUrl": "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=785856430,1058275663&fm=26&gp=0.jpg",
+			"userName": "凡心一墨",
+			"wordCount": "1.6k",
+			"like": "32",
+			"attention": false
+		},{
+			"id": 14,
+			"imgUrl": "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1120691561,280396680&fm=26&gp=0.jpg",
+			"userName": "木木木_714a",
+			"wordCount": "32.7k",
+			"like": "1.2k",
+			"attention": false
+		},{
+			"id": 15,
+			"imgUrl": "https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3916265615,719559157&fm=26&gp=0.jpg",
+			"userName": "美好吉祥园",
+			"wordCount": "432",
+			"like": "34",
+			"attention": false
+		},{
+			"id": 16,
+			"imgUrl": "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3079959228,1088482161&fm=26&gp=0.jpg",
+			"userName": "momo_6437",
+			"wordCount": "368",
+			"like": "32",
+			"attention": false
+		},{
+			"id": 17,
+			"imgUrl": "https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=55313586,81190178&fm=26&gp=0.jpg",
+			"userName": "钱罐子钱",
+			"wordCount": "3.6k",
+			"like": "1.2k",
+			"attention": false
+		},{
+			"id": 18,
+			"imgUrl": "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3787015992,4079025483&fm=26&gp=0.jpg",
+			"userName": "渡舟弱水",
+			"wordCount": "134",
+			"like": "3",
+			"attention": false
+		},{
+			"id": 19,
+			"imgUrl": "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=629169578,165026205&fm=26&gp=0.jpg",
+			"userName": "怪旅泊",
+			"wordCount": "532",
+			"like": "4",
+			"attention": false
+		},{
+			"id": 20,
+			"imgUrl": "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1353581027,2086379144&fm=26&gp=0.jpg",
+			"userName": "jiangxinq",
+			"wordCount": "6.6k",
+			"like": "34",
+			"attention": false
 		}]
 	}
 }

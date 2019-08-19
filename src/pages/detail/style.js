@@ -4,10 +4,11 @@ export const DetailWrapper = styled.div`
   overflow:hidden;
   width:620px;
   margin:0 auto;
+  margin-top:56px;
   padding-bottom:100px;
 `;
 
-export const Header = styled.div`
+export const DHeader = styled.div`
   margin:50px 0 20px 0;
   line-height:44px;
   font-size:34px;
