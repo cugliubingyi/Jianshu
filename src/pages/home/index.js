@@ -30,37 +30,41 @@ class Home extends PureComponent{
         return(
             <Fragment>
                 <Header/>
-                <HomeWrapper>
-                    <HomeLeft>
-                        <Slider />
-                        <Topic />
-                        <List />
-                    </HomeLeft>
-                    <HomeRight>
-                        <Recommend />
-                        <QuickMark/>
-                        <Writer />
-                    </HomeRight>
-                    {
-                        this.props.showScroll?
-                            <BackTop
-                                onClick={this.handleScrollTop}
-                                onMouseEnter={this.props.handleBacktopMouseEnter}
-                                onMouseLeave={this.props.handleBacktopMouseLeave}
-                            >
-                                <i className="iconfont icon-xiangshangjiantouarrowup-copy"></i>
-                                {/*{this.props.backtopMouseIn?<div className="backtop-desc">回到顶部</div>:null}*/}
-                                <CSSTransition
-                                    in={this.props.backtopMouseIn}
-                                    timeout={200}
-                                    classNames="fade"
-                                >
-                                    <div className={`backtop-desc ${this.props.backtopMouseIn?'mousein':''}`}>回到顶部</div>
-                                </CSSTransition>
-                            </BackTop>
-                            :null
-                    }
-                </HomeWrapper>
+                {
+                    this.props.topicList.toJS().length?
+                        <HomeWrapper>
+                            <HomeLeft>
+                                <Slider />
+                                <Topic />
+                                <List />
+                            </HomeLeft>
+                            <HomeRight>
+                                <Recommend />
+                                <QuickMark/>
+                                <Writer />
+                            </HomeRight>
+                            {
+                                this.props.showScroll?
+                                    <BackTop
+                                        onClick={this.handleScrollTop}
+                                        onMouseEnter={this.props.handleBacktopMouseEnter}
+                                        onMouseLeave={this.props.handleBacktopMouseLeave}
+                                    >
+                                        <i className="iconfont icon-xiangshangjiantouarrowup-copy"></i>
+                                        {/*{this.props.backtopMouseIn?<div className="backtop-desc">回到顶部</div>:null}*/}
+                                        <CSSTransition
+                                            in={this.props.backtopMouseIn}
+                                            timeout={200}
+                                            classNames="fade"
+                                        >
+                                            <div className={`backtop-desc ${this.props.backtopMouseIn?'mousein':''}`}>回到顶部</div>
+                                        </CSSTransition>
+                                    </BackTop>
+                                    :null
+                            }
+                        </HomeWrapper>
+                        :null
+                }
             </Fragment>
         )
     }
@@ -83,7 +87,8 @@ class Home extends PureComponent{
 
 const mapState = (state) => ({
     showScroll:state.getIn(['home','showScroll']),
-    backtopMouseIn:state.getIn(['home','backtopMouseIn'])
+    backtopMouseIn:state.getIn(['home','backtopMouseIn']),
+    topicList:state.getIn(['home','topicList'])
 });
 
 const mapDispatch = (dispatch) => ({

@@ -110,7 +110,7 @@ class Header extends Component{
     }
 
     render(){
-        const {focused,handleInputFocus,handleInputBlur,list,login,userPic,msgMouseIn,maskShow,userMouseIn,handleMsgMouseEnter,handleMsgMouseLeave,handleShowMask,handleHideMask,handleUserMouseEnter,handleUserMouseLeave,current} = this.props;
+        const {focused,handleInputFocus,handleInputBlur,list,login,userPic,msgMouseIn,maskShow,userMouseIn,handleMsgMouseEnter,handleMsgMouseLeave,handleShowMask,handleHideMask,handleUserMouseEnter,handleUserMouseLeave,current,handleLoginTab,handleRegisterTab} = this.props;
         return(
             <HeaderWrapper>
                 <Link to="/">
@@ -170,7 +170,7 @@ class Header extends Component{
                                         null
                                 }
                             </NavItem>:
-                            <Link to='/login'><NavItem className='right'>登录</NavItem></Link>
+                            <Link to='/login'><NavItem className='right' onClick={handleLoginTab}>登录</NavItem></Link>
                     }
                     <NavItem
                         className='right'
@@ -208,7 +208,7 @@ class Header extends Component{
                         login?
                             null:
                             <Link to='/login'>
-                                <Button className='reg'>注册</Button>
+                                <Button className='reg' onClick={handleRegisterTab}>注册</Button>
                             </Link>
                     }
                 </Addition>
@@ -314,6 +314,12 @@ const mapDispatchToProps = (dispatch) => {
         },
         handleLogin(){
             dispatch(loginActionCreators.login(localStorage.account,localStorage.password));
+        },
+        handleLoginTab(){
+            dispatch(loginActionCreators.changeLoginTab('login'));
+        },
+        handleRegisterTab(){
+            dispatch(loginActionCreators.changeLoginTab('register'));
         }
     }
 };

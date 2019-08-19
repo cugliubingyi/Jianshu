@@ -8,6 +8,11 @@ const changeLogin = (result) => ({
     userPic:result.userPic
 });
 
+export const changeLoginTab = (loginTab) => ({
+    type:constants.CHANGE_LOGIN_TAB,
+    loginTab
+});
+
 export const logout = () => ({
     type:constants.LOGOUT,
     value:false,

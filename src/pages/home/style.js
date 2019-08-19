@@ -99,7 +99,7 @@ export const TopicItem = styled.div`
 
 export const ListItem = styled.div`
   overflow:hidden;
-  padding:20px 0;
+  padding-top:20px;
   border-bottom:1px solid #dcdcdc;
   .pic{
     display:block;
@@ -111,8 +111,12 @@ export const ListItem = styled.div`
 `;
 
 export const ListInfo = styled.div`
+  overflow:hidden;
   width:500px;
   float:left;
+  &.no-pic{
+    width:625px;
+  }
   .title{
     line-height:27px;
     font-size:18px;
@@ -123,6 +127,20 @@ export const ListInfo = styled.div`
     line-height:24px;
     font-size:13px;
     color:#999;
+  }
+`;
+
+export const ListMsg = styled.ul`
+  float:left;
+`;
+
+export const ListMsgItem = styled.li`
+  float:left;
+  margin-right:10px;
+  color:#B4B4B4;
+  font-size:12px;
+  &.meta{
+    color:#EA6F5A;
   }
 `;
 
